@@ -49,6 +49,14 @@ yarn dev
 
 The application will be available at `http://localhost:3000`.
 
+### Disabling SSL for Local Development
+
+To disable SSL for local development, set the `REACT_APP_USE_HTTPS` environment variable to `false`:
+
+```bash
+export REACT_APP_USE_HTTPS=false
+```
+
 ### Building for Production
 
 To build the application for production, run:

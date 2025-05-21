@@ -15,7 +15,7 @@ meta.httpEquiv = 'Content-Security-Policy';
 meta.content = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self';";
 document.head.appendChild(meta);
 
-// Ensure the application uses HTTPS
-if (window.location.protocol !== 'https:') {
+// Ensure the application uses HTTPS if the environment variable is set to true
+if (process.env.REACT_APP_USE_HTTPS === 'true' && window.location.protocol !== 'https:') {
   window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }
