@@ -15,7 +15,7 @@ const Navbar = () => {
               Home
             </Link>
             <a 
-              href="https://www.meetup.com/bitcoin-wales/" 
+              href="https://www.meetup.com/all-about-bitcoin-meetup-group-wales/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white hover:text-[#F7931A] transition-colors"
