@@ -1,13 +1,12 @@
 # Bitcoin Wales
 
-Welcome to the Bitcoin Wales project! This application is designed to be the central hub for the Bitcoin community in South Wales. Here, you can find information about upcoming meetups, read the latest blog posts, and connect with other Bitcoin enthusiasts.
+Welcome to the Bitcoin Wales project! This application is designed to be the central hub for the Bitcoin community in South Wales. Here, you can find information about upcoming meetups and connect with other Bitcoin enthusiasts.
 
 ## Features
 
 - Responsive design to ensure the application works well on all devices.
 - Dark mode toggle to switch between light and dark themes.
 - Search functionality to help users find content quickly.
-- Blog section to share news and updates.
 - Contact form for users to get in touch.
 - User authentication for member profiles and discussions.
 - Optimized images and assets to reduce load times.
