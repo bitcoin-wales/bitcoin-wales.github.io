@@ -17,18 +17,18 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="search-bar">
+    <div className="relative">
       <input
         type="text"
         value={query}
         onChange={handleSearch}
         placeholder="Search..."
-        className="px-4 py-2 border rounded"
+        className="px-4 py-2 border rounded w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white"
       />
       {results.length > 0 && (
-        <ul className="search-results mt-2">
+        <ul className="absolute left-0 right-0 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 mt-1 rounded shadow-lg z-10">
           {results.map((result, index) => (
-            <li key={index} className="py-1">
+            <li key={index} className="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer">
               {result}
             </li>
           ))}

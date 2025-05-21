@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DarkModeToggle from './DarkModeToggle';
+import SearchBar from './SearchBar';
 
 const Navbar = () => {
   return (
@@ -24,7 +25,10 @@ const Navbar = () => {
               Join Meetup
             </a>
           </nav>
-          <DarkModeToggle />
+          <div className="flex items-center space-x-4">
+            <SearchBar />
+            <DarkModeToggle />
+          </div>
         </div>
       </div>
     </header>
