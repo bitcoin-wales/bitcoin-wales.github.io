@@ -15,3 +15,42 @@ body {
   background-color: black;
   color: #F7931A;
 }
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+  .text-5xl {
+    font-size: 3rem;
+  }
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+  .max-w-7xl {
+    max-width: 100%;
+  }
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+button.dark {
+  background-color: #333;
+  color: #E0E0E0;
+}

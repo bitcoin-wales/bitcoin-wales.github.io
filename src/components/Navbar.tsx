@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
               Join Meetup
             </a>
           </nav>
+          <DarkModeToggle />
         </div>
       </div>
     </header>
