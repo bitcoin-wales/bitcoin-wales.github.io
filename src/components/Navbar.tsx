@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3">
-            <img src="/bitcoin.svg" alt="Bitcoin logo" className="h-8 w-8" />
+            <img src="/assets/images/bitcoin.svg" alt="Bitcoin logo" className="h-8 w-8" />
             <span className="text-[#F7931A] font-bold text-xl">Bitcoin Wales</span>
           </div>
           <nav className="flex space-x-8">
