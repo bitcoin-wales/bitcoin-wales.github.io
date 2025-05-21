@@ -4,22 +4,147 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bitcoin Wales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --gold: #F7931A;
+      --black: #1A1A1A;
+    }
+    
     body {
-      background-color: white;
+      background-color: var(--black);
       margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: 40px;
+      height: auto;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      padding-top: 120px;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
     }
-    img {
-      max-width: 90%;
-      height: auto;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+
+    .description {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--gold);
+      color: var(--black);
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      nav a {
+        margin: 0 1rem;
+      }
+
+      .hero {
+        padding-top: 160px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <img width="128" src="bitcoin.svg" alt="Bitcoin logo">
+  <header>
+    <div class="logo">
+      <img src="bitcoin.svg" alt="Bitcoin logo">
+      <span class="logo-text">Bitcoin Wales</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="https://www.meetup.com/bitcoin-wales/" target="_blank">Join Meetup</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <h1>Welcome to Bitcoin Wales</h1>
+      <p class="description">Join South Wales' premier Bitcoin community. We meet regularly to discuss Bitcoin, share knowledge, and build connections.</p>
+      <a href="https://www.meetup.com/bitcoin-wales/" class="cta-button" target="_blank">Join Our Next Meetup</a>
+    </div>
+  </main>
 </body>
 </html>
