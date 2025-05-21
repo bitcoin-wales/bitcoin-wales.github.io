@@ -12,7 +12,7 @@ const Hero = () => {
             Join South Wales' premier Bitcoin community. We meet regularly to discuss Bitcoin, share knowledge, and build connections.
           </p>
           <a
-            href="https://www.meetup.com/bitcoin-wales/"
+            href="https://www.meetup.com/all-about-bitcoin-meetup-group-wales/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#F7931A] text-black font-semibold px-8 py-3 rounded-full hover:transform hover:-translate-y-1 transition-all duration-200"
