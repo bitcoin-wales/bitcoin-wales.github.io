@@ -14,11 +14,8 @@ export default defineConfig({
       }
     }
   },
-  cacheDir: 'node_modules/.vite',
   server: {
-    fs: {
-      strict: true
-    },
-    https: false
+    port: 3000,
+    open: true
   }
 });
