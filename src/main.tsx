@@ -16,6 +16,6 @@ meta.content = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-
 document.head.appendChild(meta);
 
 // Ensure the application uses HTTPS if the environment variable is set to true
-if (process.env.REACT_APP_USE_HTTPS === 'true' && window.location.protocol !== 'https:') {
+if (import.meta.env.VITE_REACT_APP_USE_HTTPS === 'true' && window.location.protocol !== 'https:') {
   window.location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }
