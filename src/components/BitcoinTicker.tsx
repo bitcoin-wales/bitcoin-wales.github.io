@@ -31,7 +31,7 @@ const BitcoinTicker: React.FC = () => {
     <span className="ml-4 px-3 py-1 rounded bg-bitcoin text-black font-semibold text-sm shadow flex items-center gap-2">
       {price ? price : error ? error : '...'}
       <a href="https://coingecko.com/" target="_blank" rel="noopener noreferrer" title="Powered by CoinGecko">
-        <img src="/cg.png" alt="Coingecko logo" className="h-4 w-4" />
+        <img src="/src/assets/cg.png" alt="Coingecko logo" className="h-4 w-4" />
       </a>
     </span>
   );
