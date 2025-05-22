@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
 }
 
 body {
@@ -13,10 +13,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: black;
-  color: #F7931A;
+  color: white;
 }
 
-/* Responsive Design */
+.hero-gradient {
+  background: radial-gradient(circle at center, rgba(247, 147, 26, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
 @media (max-width: 640px) {
   .text-4xl {
     font-size: 2.25rem;
