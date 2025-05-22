@@ -7,7 +7,11 @@ const BitcoinTicker: React.FC = () => {
   useEffect(() => {
     const fetchPrice = async () => {
       try {
-        const res = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=gbp');
+        const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=gbp';
+        const options = {method: 'GET', headers: {accept: 'application/json'}};
+        
+        const res = await fetch(url, options);
+
         const data = await res.json();
         if (data.bitcoin && data.bitcoin.gbp) {
           setPrice(data.bitcoin.gbp.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' }));
@@ -24,8 +28,11 @@ const BitcoinTicker: React.FC = () => {
   }, []);
 
   return (
-    <span className="ml-4 px-3 py-1 rounded bg-bitcoin text-black font-semibold text-sm shadow">
-      £{price ? price : error ? error : '...'}
+    <span className="ml-4 px-3 py-1 rounded bg-bitcoin text-black font-semibold text-sm shadow flex items-center gap-2">
+      {price ? price : error ? error : '...'}
+      <a href="https://coingecko.com/" target="_blank" rel="noopener noreferrer" title="Powered by CoinGecko">
+        <img src="/cg.png" alt="Coingecko logo" className="h-4 w-4" />
+      </a>
     </span>
   );
 };
