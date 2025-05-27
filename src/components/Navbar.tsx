@@ -15,8 +15,9 @@ const Navbar = () => {
             <Link to="/" className="nav-link">
               Home
             </Link>
-            <Link to="/events" className="nav-link">
+            <Link to="/events" className="nav-link flex items-center">
               Events
+              <span className="text-red-500 ml-0.5">!</span>
             </Link>
             <a 
               href="https://www.meetup.com/all-about-bitcoin-meetup-group-wales/" 
