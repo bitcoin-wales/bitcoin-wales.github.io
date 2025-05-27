@@ -15,6 +15,9 @@ const Navbar = () => {
             <Link to="/" className="nav-link">
               Home
             </Link>
+            <Link to="/events" className="nav-link">
+              Events
+            </Link>
             <a 
               href="https://www.meetup.com/all-about-bitcoin-meetup-group-wales/" 
               target="_blank" 
