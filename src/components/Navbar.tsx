@@ -27,6 +27,14 @@ const Navbar = () => {
             >
               Join Meetup
             </a>
+            <a 
+              href="https://x.com/DragonBitcoin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              X (Twitter)
+            </a>
             <BitcoinTicker />
           </div>
         </div>
