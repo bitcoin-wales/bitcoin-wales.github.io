@@ -11,8 +11,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
-            <img src="/bitcoin.svg" alt="Bitcoin logo" className="h-8 w-8" />
-            <span className="text-bitcoin font-bold text-xl tracking-tight">Bitcoin Wales</span>
+            <img src="/Logo transparent.png" alt="Bitcoin Wales logo" className="h-8 w-75" />
           </Link>
           <div className="flex items-center space-x-8">
             <Link to="/" className="nav-link">
