@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bitcoin-orange: #F7931A;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.hero-gradient {
+  background: radial-gradient(
+    circle at center,
+    rgba(247, 147, 26, 0.15) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-300 hover:text-bitcoin transition-colors duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply inline-block bg-bitcoin text-black font-semibold px-8 py-4 rounded-full 
+           hover:transform hover:-translate-y-1 transition-all duration-200 
+           shadow-lg hover:shadow-bitcoin/20;
+  }
+}
